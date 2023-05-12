@@ -1,1 +1,33 @@
-/*# sourceMappingURL=main.css.map */
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  color: black;
+  background-color: #fff;
+  text-align: center;
+}
+
+#header {
+  background-color: #edefca;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .logo {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+}/*# sourceMappingURL=main.css.map */
