@@ -50,12 +50,26 @@ h1 {
 }
 .nav-item {
   font-family: "Material Icons";
-  font-size: 1.5rem;
   font-weight: bold;
-  padding: 0 20px;
 
   &::before {
     vertical-align: -3px;
+  }
+
+  @include mq(sp) {
+    padding: 0px 10px;
+    font-size: 1rem;
+    &::before {
+      vertical-align: -1px;
+    }
+  }
+  @include mq(tab) {
+    padding: 0px 10px;
+    font-size: 1.5rem;
+  }
+  @include mq(pc) {
+    padding: 0 20px;
+    font-size: 1.5rem;
   }
 
   &#profile-nav::before {

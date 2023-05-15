@@ -4,13 +4,15 @@ html {
   @include mq(sp) {
     font-size: 62.5%;
   }
-  @include mq(pc) {
+  @include mq(tab) {
     font-size: 75%;
+  }
+  @include mq(pc) {
+    font-size: 120%;
   }
 }
 body {
   margin: 0;
-  font-size: 1rem;
   color: $cBlack;
   background-color: $cBackgroud;
   text-align: center;
