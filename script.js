@@ -1,27 +1,25 @@
-// 背景
-bubbly({
-  colorStart: "#D9E5FF",
-  colorStop: "#005FFF",
-  canvas: document.querySelector("#back"),
-});
-
-// let current = 1;
-// let next = 2;
-
-// let max_count = 2;
-
-// $(function () {
-//   let timer;
-//   timer = window.setInterval(animation, 1000);
+// $("#wave").wavify({
+//   height: 60,
+//   bones: 3,
+//   amplitude: 40,
+//   color: "#0bd",
+//   speed: 0.25,
 // });
 
-// function animation() {
-//   $("#HAM_" + next).fadeIn(500);
-//   $("#HAM_" + current).fadeOut(500);
+$(document).ready(function () {
+  $("#back").ripples({
+    resolution: 516,
+    dropRadius: 30,
+    perturbance: 0.08,
+  });
 
-//   current = next;
-//   next++;
-//   if (next > max_count) {
-//     next = 1;
-//   }
-// }
+  setInterval(function () {
+    const $el = $("#back");
+    let x = Math.random() * $el.outerWidth();
+    let y = Math.random() * $el.outerHeight();
+    const dropRadius = 20;
+    let strength = 0.08 + Math.random() * 0.08;
+
+    $el.ripples("drop", x, y, dropRadius, strength);
+  }, 1000);
+});
