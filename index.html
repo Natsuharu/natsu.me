@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bubbly-bg/1.0.0/bubbly-bg.js"></script>
 
     <title>Document</title>
   </head>
   <body>
     <div id="wrap">
       <header id="header">
+        <canvas id="back"></canvas>
         <h1 class="logo">
           <span class="logo-title">Natsumi's portfolio</span>
         </h1>
       </header>
       <!-- header fin -->
       <div class="nav">
-        <a href="" class="nav-item">
-          <div id="work-nav">work</div>
-        </a>
-        <a href="" class="nav-item">
-          <div id="about-nav">about</div>
-        </a>
+        <ul>
+          <li class="nav-item" id="profile-nav">
+            <a href="">PROFILE</a>
+          </li>
+          <li class="nav-item" id="skill-nav">
+            <a href="">SKILL</a>
+          </li>
+          <li class="nav-item" id="works-nav">
+            <a href="">WORKS</a>
+          </li>
+          <li class="nav-item" id="contact-nav">
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>

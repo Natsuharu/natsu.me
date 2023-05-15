@@ -1,17 +1,17 @@
-@use "mixin" as m;
+@use "mixin" as *;
 
 html {
-  @include m.mq(sp) {
+  @include mq(sp) {
     font-size: 62.5%;
   }
-  @include m.mq(pc) {
+  @include mq(pc) {
     font-size: 75%;
   }
 }
 body {
   margin: 0;
   font-size: 1rem;
-  color: m.$cBlack;
-  background-color: m.$cBackgroud;
+  color: $cBlack;
+  background-color: $cBackgroud;
   text-align: center;
 }
