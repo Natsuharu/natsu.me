@@ -42,8 +42,13 @@ body {
 }
 #header .logo {
   display: block;
-  position: fixed;
   color: White;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -144,6 +149,11 @@ main {
   background-size: 137%;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .profile-image {
+    height: 11rem;
+  }
+}
 
 .text {
   width: 55%;
@@ -152,4 +162,9 @@ main {
   word-break: break-all;
   text-align: left;
   font-size: large;
+}
+@media screen and (max-width: 768px) {
+  .text p {
+    font-size: inherit;
+  }
 }/*# sourceMappingURL=main.css.map */

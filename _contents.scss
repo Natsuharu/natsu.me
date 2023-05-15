@@ -38,6 +38,10 @@ main {
   height: 20rem;
   background-size: 137%;
   background-repeat: no-repeat;
+
+  @include mq(sp) {
+    height: 11rem;
+  }
 }
 
 .text {
@@ -47,5 +51,9 @@ main {
     word-break: break-all;
     text-align: left;
     font-size: large;
+
+    @include mq(sp) {
+      font-size: inherit;
+    }
   }
 }
