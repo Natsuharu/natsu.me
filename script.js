@@ -1,11 +1,3 @@
-// $("#wave").wavify({
-//   height: 60,
-//   bones: 3,
-//   amplitude: 40,
-//   color: "#0bd",
-//   speed: 0.25,
-// });
-
 $(document).ready(function () {
   $("#back").ripples({
     resolution: 516,
@@ -22,4 +14,22 @@ $(document).ready(function () {
 
     $el.ripples("drop", x, y, dropRadius, strength);
   }, 1000);
+});
+
+let wave1 = $("#feel-the-wave").wavify({
+  height: 80,
+  bones: 4,
+  amplitude: 20,
+  color: "rgba(0, 153, 255, .7)",
+  // color: "rgba(255, 255, 255, .7)",
+  speed: 0.15,
+});
+
+let wave2 = $("#feel-the-wave-two").wavify({
+  height: 60,
+  bones: 3,
+  amplitude: 20,
+  color: "rgba(0, 153, 255, .5)",
+  // color: "rgba(0, 153, 255, .7)",
+  speed: 0.25,
 });

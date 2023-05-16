@@ -75,11 +75,20 @@ h1 {
   &.skill::before {
     content: "subject";
   }
-  &.works::before {
+  &.portfolio::before {
     content: "grade";
   }
   &.contact::before {
     content: "email";
+  }
+  &.desktop::before {
+    content: "desktop_windows";
+    padding: 10px;
+  }
+  & svg {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 10px;
   }
 }
 
