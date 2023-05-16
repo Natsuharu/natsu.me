@@ -1,0 +1,26 @@
+@use "mixin" as *;
+
+* {
+  // outline: 2px red solid;
+}
+
+html {
+  @include mq(sp) {
+    font-size: 62.5%;
+  }
+  @include mq(tab) {
+    font-size: 75%;
+  }
+  @include mq(pc) {
+    font-size: 120%;
+  }
+
+  scroll-behavior: smooth;
+}
+body {
+  // width: 100vw;
+  margin: 0;
+  color: $cBlack;
+  background-color: $cBackgroud;
+  text-align: center;
+}

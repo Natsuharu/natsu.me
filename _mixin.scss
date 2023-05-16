@@ -1,0 +1,18 @@
+$breakpoint: (
+  sp: "screen and (max-width: 768px)",
+  tab: "screen and (min-width: 769px) and (max-width: 1280px)",
+  pc: "screen and (min-width: 1281px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+// カラー設定
+$cBackgroud: #f3f3f3;
+$cTitle: #444;
+$cHeader: #edefca;
+$cBlack: black;
+$cWhite: White;
