@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#back").ripples({
     resolution: 516,
     dropRadius: 30,
-    perturbance: 0.08,
+    perturbance: 0.03,
   });
 
   setInterval(function () {
@@ -10,7 +10,7 @@ $(document).ready(function () {
     let x = Math.random() * $el.outerWidth();
     let y = Math.random() * $el.outerHeight();
     const dropRadius = 20;
-    let strength = 0.08 + Math.random() * 0.08;
+    let strength = 0.04 + Math.random() * 0.04;
 
     $el.ripples("drop", x, y, dropRadius, strength);
   }, 1000);
