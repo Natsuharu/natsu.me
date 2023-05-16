@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#back").ripples({
     resolution: 516,
     dropRadius: 30,
-    perturbance: 0.08,
+    perturbance: 0.03,
   });
 
   setInterval(function () {
