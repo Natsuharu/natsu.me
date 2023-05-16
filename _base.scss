@@ -1,5 +1,9 @@
 @use "mixin" as *;
 
+* {
+  // outline: 2px red solid;
+}
+
 html {
   @include mq(sp) {
     font-size: 62.5%;
@@ -14,6 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  // width: 100vw;
   margin: 0;
   color: $cBlack;
   background-color: $cBackgroud;
