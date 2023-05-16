@@ -139,6 +139,7 @@ main section {
 
 .section-title {
   font-size: 3rem;
+  margin: 0;
   color: #444;
 }
 
@@ -195,7 +196,7 @@ main section {
   flex-wrap: nowrap;
   flex-direction: column;
   background-color: White;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 table {

@@ -21,6 +21,7 @@ main {
 
 .section-title {
   font-size: 3rem;
+  margin: 0;
   color: $cTitle;
 }
 
@@ -82,7 +83,7 @@ main {
   flex-wrap: nowrap;
   flex-direction: column;
   background-color: $cWhite;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 table {
