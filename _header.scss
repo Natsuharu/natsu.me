@@ -54,11 +54,16 @@ h1 {
 
   &.section-title::before {
     padding: 10px;
-    vertical-align: -5px;
-  }
 
-  &::before {
-    vertical-align: -3px;
+    @include mq(pc) {
+      vertical-align: -9px;
+    }
+    @include mq(tab) {
+      vertical-align: -5px;
+    }
+    @include mq(sp) {
+      vertical-align: -3px;
+    }
   }
 
   @include mq(sp) {
