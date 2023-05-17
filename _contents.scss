@@ -95,9 +95,15 @@ th {
 }
 
 // portfolio
-.card-caption-title {
-  font-size: 1rem;
-  font-weight: bold;
+.card-caption {
+  & > p {
+    font-weight: 900;
+  }
+
+  & .card-caption-title {
+    font-size: 1rem;
+    font-size: medium;
+  }
 }
 
 // contact

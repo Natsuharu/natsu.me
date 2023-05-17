@@ -16,6 +16,10 @@
   position: relative;
   background-color: $cWhite;
 
+  @include mq(sp) {
+    height: 360px;
+  }
+
   & .logo {
     display: block;
     color: $cWhite;
@@ -47,6 +51,11 @@ h1 {
 .nav-item {
   font-family: "Material Icons";
   font-weight: 900;
+
+  &.section-title::before {
+    padding: 10px;
+    vertical-align: -5px;
+  }
 
   &::before {
     vertical-align: -3px;
