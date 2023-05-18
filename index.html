@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,58 +75,63 @@
             </div>
 
             <!-- card -->
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="skill-desc">
-                  <div class="skill-desc-title">
-                    <h3 class="nav-item desktop">デザイン・コーティング</h3>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">技術</th>
-                          <th scope="col">経験年数</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">HTML5</th>
-                          <td>1年</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CSS3</th>
-                          <td>1年</td>
-                        </tr>
-                      </tbody>
-                    </table>
+            <div class="swiper">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="skill-desc">
+                    <div class="skill-desc-title">
+                      <h3 class="nav-item desktop">デザイン・コーティング</h3>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">技術</th>
+                            <th scope="col">経験年数</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">HTML5</th>
+                            <td>1年</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">CSS3</th>
+                            <td>1年</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide">
+                  <div class="skill-desc">
+                    <div class="skill-desc-title">
+                      <h3 class="nav-item desktop">フロントエンド</h3>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">技術</th>
+                            <th scope="col">経験年数</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">JavaScript</th>
+                            <td>1年</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">JQuery</th>
+                            <td>1年</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="skill-desc">
-                  <div class="skill-desc-title">
-                    <h3 class="nav-item desktop">フロントエンド</h3>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">技術</th>
-                          <th scope="col">経験年数</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">JavaScript</th>
-                          <td>1年</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">JQuery</th>
-                          <td>1年</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </section>
@@ -224,6 +233,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>

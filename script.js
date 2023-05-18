@@ -1,3 +1,4 @@
+// 水紋
 $(document).ready(function () {
   $("#back").ripples({
     resolution: 516,
@@ -16,6 +17,7 @@ $(document).ready(function () {
   }, 1000);
 });
 
+// 波
 let wave1 = $("#feel-the-wave").wavify({
   height: 80,
   bones: 4,
@@ -31,3 +33,36 @@ let wave2 = $("#feel-the-wave-two").wavify({
   color: "rgba(0, 153, 255, .5)",
   speed: 0.25,
 });
+
+// スライド
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  spaceBetween: 10,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  const child = document.querySelector(".swiper");
+  const cb = function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        $(entry.target).toggleClass("hovered");
+      } else {
+        $(entry.target).toggleClass("hovered");
+      }
+    });
+  };
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0,
+  };
+
+  const io = new IntersectionObserver(cb, options);
+  io.observe(child);
+}
